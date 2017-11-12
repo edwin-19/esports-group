@@ -1,23 +1,11 @@
 <?php
-  require_once 'dbconfig.php';
+// the message
+$msg = "First line of text\nSecond line of text";
 
-  if ($user->isLoggedIn()!="") {
-    $user->redirect('index.html');
-  } else {
-    echo "YOU ARE NOT LOGGED IN";
-  }
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
 
-  if(isset($_POST['btn-login'])) {
-    $uname = $_POST['txt_uname_email'];
-    echo "EFEFEF";
-  } else {
-    echo "error s]";
-  }
-
- ?>
-
- <div class="form-group">
-  <button type="submit" name="btn-login" class="btn btn-block btn-primary">
-      <i class="glyphicon glyphicon-log-in"></i>&nbsp;SIGN IN
-     </button>
- </div>
+// send email
+mail("edwin_c2001@hotmail.com","My subject",$msg);
+echo "Worked";
+?>
