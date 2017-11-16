@@ -15,6 +15,8 @@ try {
 }
 
 include_once "user.php";
+include_once "ticket.php";
 
 $user = new User($DB_con);
+$ticket = new Ticket($DB_con);
  ?>

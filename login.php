@@ -3,7 +3,7 @@
   require_once 'php/dbconfig.php';
 
   if ($user->isLoggedIn()!="") {
-    $user->redirect('index.html');
+    $user->redirect('profile/profile.php');
   } else {
     echo "YOU ARE NOT LOGGED IN";
   }
@@ -640,7 +640,7 @@
                 <div class="form-group">
                  <button type="submit" name="btn-login" class="btn btn-block btn-primary">
                      <i class="glyphicon glyphicon-log-in"></i>&nbsp;SIGN IN
-                    </button>
+                  </button>
                 </div>
 
                 <div class="divider">
