@@ -18,8 +18,6 @@
     } else {
       $error = "Wrong Details !";
     }
-  } else {
-    echo "Error";
   }
  ?>
 
