@@ -44,6 +44,11 @@ class User {
             $_SESSION['user_session'] = $userRow['user_id'];
             $_SESSION['username'] = $userRow['user_name'];
             $_SESSION['useremail'] = $userRow['user_email'];
+            $_SESSION['userpassword'] = $userRow['user_password'];
+            $_SESSION['firstname'] = $userRow['user_first_name'];
+            $_SESSION['lastname'] = $userRow['user_last_name'];
+            $_SESSION['company'] = $userRow['user_company'];
+
             return true;
           } else {
             return false;
@@ -97,6 +102,12 @@ class User {
   public function logout() {
     session_destroy();
     unset($_SESSION['user_session']);
+    unset($_SESSION['username']);
+    unset($_SESSION['useremail']);
+    unset($_SESSION['userpassword']);
+    unset($_SESSION['firstname']);
+    unset($_SESSION['lastname']);
+    unset($_SESSION['company']);
     return true;
   }
 

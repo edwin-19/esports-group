@@ -3,6 +3,26 @@
 
   echo "<title>Welcome Back " . $_SESSION['username']. "</title>";
 
+  if ($user->isLoggedIn()!="") {
+
+  } else {
+    $user->redirect('../index.html');
+  }
+
+  function checkPassword($password) {
+    $uconfirmPass = $_POST['txt_confirm_password'];
+
+    if ($uconfirmPass == $password) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  if(isset($_POST['btnLogOut'])){
+    $user->logout();
+  }
+
   if(isset($_POST['btnSave'])){
     $uname = $_POST['txt_uname'];
     $umail = $_POST['txt_uname_email'];
@@ -11,7 +31,12 @@
     $ulname = $_POST['txt_uname_lname'];
     $ucompany = $_POST['txt_uname_company'];
 
-    $user->updateUser($ufname, $ulname, $uname, $upass, $ucompany, $umail, $_SESSION['user_session']);
+    if (checkPassword($upass)) {
+      $user->updateUser($ufname, $ulname, $uname, $upass, $ucompany, $umail, $_SESSION['user_session']);
+    } else {
+      echo "Password does not match";
+    }
+
   }
  ?>
 
@@ -57,7 +82,9 @@
             <div class="form-group">
               <label class="col-lg-3 control-label">First name:</label>
               <div class="col-lg-8">
-                <input class="form-control" type="text" name="txt_uname_fname" value="">
+                <input class="form-control" type="text" name="txt_uname_fname" value="<?php
+                echo $_SESSION['firstname'];
+                ?>">
               </div>
             </div>
 
@@ -67,14 +94,18 @@
               </label>
 
               <div class="col-lg-8">
-                <input class="form-control" type="text" name="txt_uname_lname" value="Bishop">
+                <input class="form-control" type="text" name="txt_uname_lname" value="<?php
+                echo $_SESSION['lastname'];
+                ?>">
               </div>
             </div>
 
             <div class="form-group">
               <label class="col-lg-3 control-label">Company:</label>
               <div class="col-lg-8">
-                <input class="form-control" type="text" name="txt_uname_company" value="">
+                <input class="form-control" type="text" name="txt_uname_company" value="<?php
+                echo $_SESSION['company'];
+                ?>">
               </div>
             </div>
 
@@ -117,14 +148,14 @@
             <div class="form-group">
               <label class="col-md-3 control-label">Password:</label>
               <div class="col-md-8">
-                <input class="form-control" type="password" name="txt_password" value="11111122333">
+                <input class="form-control" type="password" name="txt_password" value="" placeholder="e.g 123">
               </div>
             </div>
 
             <div class="form-group">
               <label class="col-md-3 control-label">Confirm password:</label>
               <div class="col-md-8">
-                <input class="form-control" type="password" name="txt_confirm_password" value="11111122333">
+                <input class="form-control" type="password" name="txt_confirm_password" value="" placeholder="e.g 123">
               </div>
             </div>
 
@@ -134,6 +165,8 @@
                 <input type="submit" class="btn btn-primary" value="Save Changes" name="btnSave">
                 <span></span>
                 <input type="reset" class="btn btn-default" value="Cancel">
+                <span></span>
+                <input type="submit" class="btn btn-default" value="Log Out" name="btnLogOut">
               </div>
             </div>
 

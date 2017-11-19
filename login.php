@@ -4,9 +4,7 @@
 
   if ($user->isLoggedIn()!="") {
     $user->redirect('profile/profile.php');
-  } else {
-    echo "YOU ARE NOT LOGGED IN";
-  }
+  } 
 
   if(isset($_POST['btn-login'])){
     $uname = $_POST['txt_uname_email'];
@@ -18,8 +16,6 @@
     } else {
       $error = "Wrong Details !";
     }
-  } else {
-    echo "Error";
   }
  ?>
 
@@ -220,143 +216,25 @@
                 <nav class="navbar">
                   <div class="collapse navbar-collapse">
                     <ul id="menu-main-menu" class="nav navbar-nav">
-                      <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-13" data-dropdown="dropdown">
-                        <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">
-                          Homepages<i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </a>
-
-                        <ul role="menu" class=" dropdown-menu">
-                          <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-30">
-                            <a href="http://demo.gloriathemes.com/wp/esport/">
-                              Home 1
-                            </a>
-                          </li>
-
-                          <li id="menu-item-282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-282">
-                            <a href="http://demo.gloriathemes.com/wp/esport/home-2/">
-                              Home 2
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-
                       <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24">
-                        <a href="http://demo.gloriathemes.com/wp/esport/about/">
-                          About
-                        </a>
-                      </li>
-
+                        <a href="about/index.html">About Us</a></li>
                       <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27">
-                        <a href="http://demo.gloriathemes.com/wp/esport/teams/">
-                          Teams
-                        </a>
-                      </li>
-
+                        <a href="teams/index.html">Teams</a></li>
                       <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
-                        <a href="http://demo.gloriathemes.com/wp/esport/esport-fixtures/">
-                          Fixtures
-                        </a>
-                      </li>
-
+                        <a href="esport-fixtures/index.html">Fixtures</a></li>
                       <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33">
-                        <a href="http://demo.gloriathemes.com/wp/esport/sponsors/">
-                          Sponsors
-                        </a>
-                      </li>
+                        <a href="tickets/index.php">Tickets</a></li>
+                      <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                        <a href="news/index.html">News</a></li>
 
                       <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
-                        <a href="http://demo.gloriathemes.com/wp/esport/blog-1/">
-                          Blog
-                        </a>
-                      </li>
+                          <a href="faq/index.html">FAQ</a></li>
 
-                      <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children dropdown menu-item-29" data-dropdown="dropdown">
-                        <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Pages
-                          <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </a>
+                          <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                              <a href="sponsors/index.html">Sponsors</a></li>
 
-                        <ul role="menu" class=" dropdown-menu">
-                          <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47">
-                            <a href="http://demo.gloriathemes.com/wp/esport/gallery/">
-                              Gallery
-                            </a>
-                          </li>
 
-                          <li id="menu-item-461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-461" data-dropdown="dropdown">
-                            <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">
-                              Blog Pages<i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </a>
-                            <ul role="menu" class=" dropdown-menu">
-                              <li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462">
-                                <a href="http://demo.gloriathemes.com/wp/esport/blog-1/">
-                                  Blog 1
-                                </a>
-                              </li>
-
-                              <li id="menu-item-463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-463">
-                                <a href="http://demo.gloriathemes.com/wp/esport/blog-2/">
-                                  Blog 2
-                                </a>
-                              </li>
-
-                              <li id="menu-item-464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464">
-                                <a href="http://demo.gloriathemes.com/wp/esport/blog-3/">
-                                  Blog 3
-                                </a>
-                              </li>
-
-                              <li id="menu-item-465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-465">
-                                <a href="http://demo.gloriathemes.com/wp/esport/blog-4/">
-                                  Blog 4
-                                </a>
-                              </li>
-
-                              <li id="menu-item-466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-466">
-                                <a href="http://demo.gloriathemes.com/wp/esport/blog-5/">
-                                  Blog 5
-                                </a>
-                              </li>
-
-                            </ul>
-                          </li>
-
-                          <li id="menu-item-467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-467">
-                            <a href="http://demo.gloriathemes.com/wp/esport/forums/">
-                              Forums
-                            </a>
-                          </li>
-
-                          <li id="menu-item-2021" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2021">
-                            <a href="http://demo.gloriathemes.com/wp/esport/shop/">
-                              Shop
-                            </a>
-                          </li>
-
-                          <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45">
-                            <a href="http://demo.gloriathemes.com/wp/esport/page-example-1/">
-                              Page Example 1
-                            </a>
-                          </li>
-
-                          <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44">
-                            <a href="http://demo.gloriathemes.com/wp/esport/page-example-2/">
-                              Page Example 2
-                            </a>
-                          </li>
-
-                          <li id="menu-item-1955" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-1955 active">
-                            <a href="http://demo.gloriathemes.com/wp/esport/404">
-                              404 Page
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
-                        <a href="http://demo.gloriathemes.com/wp/esport/contact/">
-                          Contact
-                        </a>
-                      </li>
+                      <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="contact/index.html">Contact</a></li>
                     </ul>
                   </div>
                 </nav>
