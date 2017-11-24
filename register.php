@@ -36,7 +36,8 @@
             $error[] = "sorry email id already taken !";
        } else {
          if ($user->register($umail,$uname,$upass)) {
-           $user->redirect('login.php');
+           $user->login($uname,$umail,$upass);
+          $user->redirect('index.html');
          }
        }
 
@@ -44,7 +45,7 @@
        echo $ex->getMessage();
      }
    }
- } 
+ }
 
  ?>
 
@@ -251,10 +252,10 @@
                       <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
                         <a href="news/index.html">News</a></li>
 
-                      <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                      <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
                           <a href="faq/index.html">FAQ</a></li>
 
-                          <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                          <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
                               <a href="sponsors/index.html">Sponsors</a></li>
 
 
@@ -964,8 +965,7 @@
           </ul>
         </div>
       </div>
-    </div>
-    </div>
+
     </div>
 
     <div class="modal fade pt-user-modal" id="user_login_popup" tabindex="-1" role="dialog" aria-hidden="true">

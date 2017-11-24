@@ -184,9 +184,9 @@
       <style id='rs-plugin-settings-inline-css' type='text/css'>
       #rs-demo-id {}
       </style>
-      <link rel='stylesheet' id='woocommerce-layout-css'  href='../wp-content/plugins/woocommerce/assets/css/woocommerce-layout0226.css?ver=3.1.2' type='text/css' media='all' />
-      <link rel='stylesheet' id='woocommerce-smallscreen-css'  href='../wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen0226.css?ver=3.1.2' type='text/css' media='only screen and (max-width: 768px)' />
-      <link rel='stylesheet' id='woocommerce-general-css'  href='../wp-content/plugins/woocommerce/assets/css/woocommerce0226.css?ver=3.1.2' type='text/css' media='all' />
+      <link rel='stylesheet' id='woocommerce-layout-css2'  href='../wp-content/plugins/woocommerce/assets/css/woocommerce-layout0226.css?ver=3.1.2' type='text/css' media='all' />
+      <link rel='stylesheet' id='woocommerce-smallscreen-css2'  href='../wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen0226.css?ver=3.1.2' type='text/css' media='only screen and (max-width: 768px)' />
+      <link rel='stylesheet' id='woocommerce-general-css2'  href='../wp-content/plugins/woocommerce/assets/css/woocommerce0226.css?ver=3.1.2' type='text/css' media='all' />
       <link rel='stylesheet' id='dashicons-css'  href='../wp-includes/css/dashicons.minef15.css?ver=4.8' type='text/css' media='all' />
       <link rel='stylesheet' id='event-tickets-plus-tickets-css'  href='../wp-content/plugins/event-tickets-plus/src/resources/css/tickets62df.css?ver=4.5.6' type='text/css' media='all' />
       <link rel='stylesheet' id='tribe-events-full-pro-calendar-style-css'  href='../wp-content/plugins/events-calendar-pro/src/resources/css/tribe-events-pro-full.min859d.css?ver=4.4.13' type='text/css' media='all' />
@@ -202,7 +202,7 @@
       <link rel='stylesheet' id='media-views-css'  href='../wp-includes/css/media-views.minef15.css?ver=4.8' type='text/css' media='all' />
       <link rel='stylesheet' id='imgareaselect-css'  href='../wp-includes/js/imgareaselect/imgareaselect3bf4.css?ver=0.9.8' type='text/css' media='all' />
       <link rel='stylesheet' id='ticketbox-google-font-css'  href='http://fonts.googleapis.com/css?family=Lato&amp;ver=4.8' type='text/css' media='all' />
-      <link rel='stylesheet' id='bootstrap-css'  href='../wp-content/themes/ticketbox/assets/css/bootstrap.min46df.css?ver=3.3.5' type='text/css' media='all' />
+      <link rel='stylesheet' id='bootstrap-css2'  href='../wp-content/themes/ticketbox/assets/css/bootstrap.min46df.css?ver=3.3.5' type='text/css' media='all' />
       <link rel='stylesheet' id='font-awesome-css'  href='../wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min3c21.css?ver=5.1.1' type='text/css' media='all' />
       <link rel='stylesheet' id='elegant-icon-css'  href='../wp-content/plugins/dawnthemes/assets/lib/elegant-icon/css/elegant-iconef15.css?ver=4.8' type='text/css' media='all' />
       <link rel='stylesheet' id='magnific-popup-css'  href='../wp-content/themes/ticketbox/assets/lib/magnific-popup/magnific-popupef15.css?ver=4.8' type='text/css' media='all' />
@@ -221,7 +221,7 @@
       body.tribe_community_edit #dawnthemes-page,body.tribe_community_edit .site-header.has-header-background{background-image:url(../wp-content/uploads/2017/08/Live-Venue-Tix.jpg) !important;}
       #footer-sidebar .widget.tribe-events-adv-list-widget .tribe-events-widget-link{display:none;} @media (max-width:1024px){.site-header.has-header-background{background-attachment:scroll;}}
       </style>
-      <link rel='stylesheet' id='js_composer_front-css'  href='../wp-content/plugins/js_composer/assets/css/js_composer.min3c21.css?ver=5.1.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='js_composer_front-css2'  href='../wp-content/plugins/js_composer/assets/css/js_composer.min3c21.css?ver=5.1.1' type='text/css' media='all' />
       <script type='text/javascript' src='../wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
       <script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
       <script type='text/javascript' src='../wp-content/themes/ticketbox/includes/ajax-register-login/assets/js/jquery.validate.minef15.js?ver=4.8'></script>
@@ -384,7 +384,7 @@
                       <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
                         <a href="../news/index.html">News</a></li>
 
-                      <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                      <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
                           <a href="../faq/index.html">FAQ</a></li>
 
                       <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29">

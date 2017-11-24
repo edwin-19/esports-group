@@ -1,14 +1,4 @@
-<?php
-require_once 'dbconfig.php';
-
-if(isset($_POST['btn-login'])){
-  echo $_POST['txt_userName'];
-} else {
-  echo "Error";
-}
-?>
-
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -20,21 +10,36 @@ if(isset($_POST['btn-login'])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <form method="post">
-      <input type="text" name="txt_userName" />
-      <br />
-      <div class="form-group">
-       <button type="submit" name="btn-login" class="btn btn-block btn-primary">
-           <i class="glyphicon glyphicon-log-in"></i>&nbsp;SIGN IN
-        </button>
-      </div>
+    <form id="uploadForm" action="" method="post"  enctype= "multipart/form-data">
+    <input type="file" name="fileToUpload" >
+    <input type="submit" name="submit" value="Submit"><br />
     </form>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <?php
+    if(isset($_POST["submit"]))
+    {
+        $target_dir = "/";
+        $file = $_FILES['fileToUpload']['name'];
+        $target_file = $target_dir . $file;
+        $uploadOk = 1;
+        $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+        // Check if image file is a actual image or fake image
+            $check = getimagesize($_FILES['fileToUpload']['tmp_name']);
+            if($check !== false) {
+                echo "File is an image - " . $check['mime'] . ".";
+                $uploadOk = 1;
+            } else {
+                echo "File is not an image.";
+                $uploadOk = 0;
+            }
+    }
+?>
   </body>
 </html>

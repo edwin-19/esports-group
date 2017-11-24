@@ -4,7 +4,7 @@
 
   if ($user->isLoggedIn()!="") {
     $user->redirect('profile/profile.php');
-  } 
+  }
 
   if(isset($_POST['btn-login'])){
     $uname = $_POST['txt_uname_email'];
@@ -14,7 +14,7 @@
     if($user->login($uname,$umail,$upass)) {
       $user->redirect('index.html');
     } else {
-      $error = "Wrong Details !";
+      echo "<script type='text/javascript'>alert('Wrong details!')</script>";
     }
   }
  ?>
@@ -227,10 +227,10 @@
                       <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
                         <a href="news/index.html">News</a></li>
 
-                      <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                      <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
                           <a href="faq/index.html">FAQ</a></li>
 
-                          <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                      <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
                               <a href="sponsors/index.html">Sponsors</a></li>
 
 
