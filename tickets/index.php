@@ -730,45 +730,43 @@
     <!-- End of main -->
 
   <!-- Footer -->
-  <footer class="footer footer-style1 remove-gap-removed" id="Footer">
+  <footer class="footer footer-style1 remove-gap" id="Footer">
     <div class="container">
       <div class="footer-content">
         <div class="vc_row wpb_row vc_row-fluid">
           <div class="wpb_column vc_column_container vc_col-sm-4">
             <div class="vc_column-inner ">
               <div class="wpb_wrapper">
+
                 <div class="content-title-element white size2">
                   <div class="title">
-                    About &amp;
-                    <span>Contact</span>
+                    About &amp; <span>Contact</span>
                   </div>
                 </div>
 
-                <div class="vc_empty_space" style="height: 25px" >
+                <div class="vc_empty_space"   style="height: 25px" >
                   <span class="vc_empty_space_inner"></span>
                 </div>
 
                 <div class="esport-contact-box">
                   <div class="contact-row about-text">
-                  The MDC also known as Marvelous Dota2 Championship, the successor to the MDC Major Series, is a tournament series organized by the Electronic Sports League.
+                    The MDC also known as Marvelous Dota2 Championship, the successor to the MDC Major Series, is a tournament series organized by the Electronic Sports League.
+
+                  </div>
 
                   <div class="contact-row address">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    Arena of Stars, Resort World Genting, Malaysia
+                      Arena of Stars, Resort World Genting, Malaysia
                   </div>
 
                   <div class="contact-row email">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:info@MDC.com">info@MDC.com">
-                      info@gloriathemes.com
-                    </a>
+                  <a href="mailto:info@MDC.com">info@MDC.com</a>
                   </div>
 
                   <div class="contact-row phone">
                     <i class="fa fa-phone" aria-hidden="true"></i>
-                    <a href="tel:++019876598766">
-                      +0166633366
-                    </a>
+                    <a href="tel:++0166633366">+0166633366</a>
                   </div>
 
                   <div class="contact-row fax">
@@ -886,11 +884,10 @@
 
                       <div class="desc">
                         <div class="title">
-                          <a href="../news/liquid.html" title="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting">
+                          <a href="../news/liquid.html" title=" Team Liquid is the final team to secure a spot in the playoffs at MDC Genting">
                             Team Liquid is the final team to secure a spot in the playoffs at MDC Genting
                           </a>
                         </div>
-
 
                         <div class="post-information">
                           <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -909,13 +906,13 @@
                       <div class="desc">
                         <div class="title">
                           <a href="../news/newbee.html" title="Newbee claim a stunning 2-1 victory over EG">
-                          Newbee claim a stunning 2-1 victory over EG <
+                            Newbee claim a stunning 2-1 victory over EG
                           </a>
                         </div>
 
                         <div class="post-information">
                           <i class="fa fa-calendar" aria-hidden="true"></i>
-                          Oct 28, 2017
+                        Oct 28, 2017
                         </div>
                       </div>
                     </div>
@@ -924,10 +921,109 @@
               </div>
             </div>
           </div>
+
+          <div class="wpb_column vc_column_container vc_col-sm-3">
+            <div class="vc_column-inner ">
+              <div class="wpb_wrapper">
+                <div class="content-title-element white size2">
+                  <div class="title">
+                    Sponsors
+                  </div>
+                </div>
+
+                <div class="vc_empty_space"   style="height: 25px" >
+                  <span class="vc_empty_space_inner"></span>
+                </div>
+
+                <div class="swiper-container logo-carousel gloria-sliders style2" data-column-space="10" data-aplay="" data-item="3" data-sloop="">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="logo-item">
+                        <a href="https://gloriathemes.com/" target=" _blank" title="Gloria Themes" >
+                          <img src="http://demo.gloriathemes.com/wp/esport/wp-content/uploads/2017/04/sponsors-white-1.png" alt="Gloria Themes" />
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="logo-item">
+                        <a href="https://gloriathemes.com/" target=" _blank" title="Gloria Themes" >
+                          <img src="http://demo.gloriathemes.com/wp/esport/wp-content/uploads/2017/04/sponsors-white-2.png" alt="Gloria Themes" />
+                        </a>
+                      </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                      <div class="logo-item">
+                        <a href="https://gloriathemes.com/" target=" _blank" title="Gloria Computers" >
+                          <img src="http://demo.gloriathemes.com/wp/esport/wp-content/uploads/2017/04/sponsors-white-3.png" alt="Gloria Computers" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="vc_empty_space"   style="height: 49px" >
+                  <span class="vc_empty_space_inner"></span>
+                </div>
+
+                <div class="content-title-element white size2">
+                  <div class="title">
+                    Newsletter
+                  </div>
+                </div>
+
+                <div class="vc_empty_space"   style="height: 25px" >
+                  <span class="vc_empty_space_inner"></span>
+                </div>
+
+                <div class="esport-newsletter-element style2">
+                  <script type="text/javascript">(function() {
+                      if (!window.mc4wp) {
+                        window.mc4wp = {
+                          listeners: [],
+                          forms    : {
+                            on: function (event, callback) {
+                              window.mc4wp.listeners.push({
+                                event   : event,
+                                callback: callback
+                              });
+                            }
+                          }
+                        }
+                      }
+                    })();
+                  </script><!-- MailChimp for WordPress v4.1.9 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+
+                  <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-228" method="post" data-id="228" data-name="eSport Newsletter" >
+                    <div class="mc4wp-form-fields">
+                      <p>
+                        <input type="email" name="EMAIL" placeholder="Your email address" required />
+                      </p>
+
+                      <p class="submitButton">
+                        <input type="submit" value="Sign up" />
+                      </p>
+                      <label style="display: none !important;">
+                        Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" />
+                      </label>
+
+                      <input type="hidden" name="_mc4wp_timestamp" value="1508400768" />
+                      <input type="hidden" name="_mc4wp_form_id" value="228" />
+                      <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
+                    </div>
+
+                    <div class="mc4wp-response"></div>
+                  </form><!-- / MailChimp for WordPress Plugin -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-     </div>
-   </footer>
+    </div>
+  </footer>
 
    <div class="footer-copyright ">
      <div class="container">

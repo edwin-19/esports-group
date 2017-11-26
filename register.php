@@ -503,7 +503,7 @@
 
     <!-- MAIN -->
     <!-- Register -->
-    <section class="bg-image bg-image-sm" style="background-image: url('../../img.youtube.com/vi/BhTkoDVgF6s/maxresdefault.jpg');">
+    <section class="bg-image bg-image-sm" style="background-image: url('img/bg/bg-login.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -646,31 +646,28 @@
 
                   <div class="esport-contact-box">
                     <div class="contact-row about-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec magna purus, malesuada at scelerisque vitae, luctus ac lorem. Aenean convallis ut ligula ut. Sed ad dicam platonem, mea eros illum elitr id similique
+                      The MDC also known as Marvelous Dota2 Championship, the successor to the MDC Major Series, is a tournament series organized by the Electronic Sports League.
+
                     </div>
 
                     <div class="contact-row address">
                       <i class="fa fa-map-marker" aria-hidden="true"></i>
-                      Walking Street, Los Angeles, California, USA
+                        Arena of Stars, Resort World Genting, Malaysia
                     </div>
 
                     <div class="contact-row email">
                       <i class="fa fa-envelope" aria-hidden="true"></i>
-                      <a href="mailto:info@gloriathemes.com">
-                        edwin@gmail.com
-                      </a>
+                    <a href="mailto:info@MDC.com">info@MDC.com</a>
                     </div>
 
                     <div class="contact-row phone">
                       <i class="fa fa-phone" aria-hidden="true"></i>
-                      <a href="tel:++019876598766">
-                        +01 987 659 87 66
-                      </a>
+                      <a href="tel:++0166633366">+0166633366</a>
                     </div>
 
                     <div class="contact-row fax">
                       <i class="fa fa-fax" aria-hidden="true"></i>
-                      +01 187 303 19 15
+                      +0166633367
                     </div>
                   </div>
                 </div>
@@ -694,53 +691,40 @@
                      <div class="widget widget_nav_menu">
                        <div class="menu-footer-menu-container">
                          <ul id="menu-footer-menu" class="menu">
-                           <li id="menu-item-215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-215">
-                             <a href="http://demo.gloriathemes.com/wp/esport/">
-                               Home
-                             </a>
+                           <li id="menu-item-215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-215">
+                             <a href="../index.html">Home</a>
                            </li>
 
-                          <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216">
-                            <a href="http://demo.gloriathemes.com/wp/esport/about/">
-                              About
-                            </a>
-                          </li>
+                           <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216">
+                             <a href="../about/index.html">About</a>
+                           </li>
 
-                          <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217">
-                            <a href="http://demo.gloriathemes.com/wp/esport/blog-1/">
-                              Blog 1
-                            </a>
-                          </li>
+                           <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217">
+                             <a href="../teams/index.html">Teams</a>
+                           </li>
 
-                          <li id="menu-item-218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-218">
-                            <a href="http://demo.gloriathemes.com/wp/esport/esport-fixtures/">
-                              Fixtures
-                            </a>
-                          </li>
+                           <li id="menu-item-218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-218">
+                             <a href="../esport-fixtures/index.html">Fixtures</a>
+                           </li>
 
-                          <li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221">
-                            <a href="http://demo.gloriathemes.com/wp/esport/teams/">
-                              Teams
-                            </a>
-                          </li>
+                           <li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221">
+                             <a href="../tickets/index.html">Tickets</a>
+                           </li>
 
-                          <li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252">
-                            <a href="http://demo.gloriathemes.com/wp/esport/gallery/">
-                              Gallery
-                            </a>
-                          </li>
+                           <li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252">
+                             <a href="../news/index.html">News</a>
+                           </li>
 
-                          <li id="menu-item-253" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-253">
-                            <a href="http://demo.gloriathemes.com/wp/esport/category/videos/">
-                              Videos
-                            </a>
-                          </li>
+                           <li id="menu-item-253" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-253">
+                             <a href="category/videos/index.html">Videos</a>
+                           </li>
 
-                          <li id="menu-item-222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222">
-                            <a href="http://demo.gloriathemes.com/wp/esport/contact/">
-                              Contact
-                            </a>
-                          </li>
+                           <li id="menu-item-222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220">
+                             <a href="../faq/index.html">FAQ</a>
+                           </li>
+                           <li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-22 current_page_item menu-item-222">
+                             <a href="../contact/index.php">Contact</a>
+                           </li>
 
                         </ul>
                       </div>
@@ -767,63 +751,63 @@
                     <div class="archive-post-list-style-3 post-list">
                       <div class="post-list-styles post-list-style-3">
                         <div class="image">
-                          <a href="http://demo.gloriathemes.com/wp/esport/top-10-esport-players/" title="Top 10 eSport Players">
-                            <img src="http://demo.gloriathemes.com/wp/esport/wp-content/uploads/2017/04/avatar-150x150.jpg" alt="Top 10 eSport Players" />
+                          <a href="../news/vp-champion.html" title="Virtus.Pro are the MDC Genting Champions">
+                            <img src="wp-content/uploads/2017/05/vp-champion-150x150.jpg" alt="Virtus.Pro are the MDC Genting Champions" />
                           </a>
                         </div>
 
                         <div class="desc">
                           <div class="title">
-                            <a href="http://demo.gloriathemes.com/wp/esport/top-10-esport-players/" title="Top 10 eSport Players">
-                              Top 10 eSport Players
+                            <a href="../news/vp-champion.html" title="Virtus.Pro are the MDC Genting Champions">
+                              Virtus.Pro are the MDC Genting Champions
                             </a>
                           </div>
 
                           <div class="post-information">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                            April 21, 2017
+                            Oct 29, 2017
                           </div>
                         </div>
                       </div>
 
                       <div class="post-list-styles post-list-style-3">
                         <div class="image">
-                          <a href="http://demo.gloriathemes.com/wp/esport/what-happened-this-esports-week/" title="What Happened This eSports Week">
-                            <img src="http://demo.gloriathemes.com/wp/esport/wp-content/uploads/2017/04/post4-150x150.jpg" alt="What Happened This eSports Week" />
+                          <a href="../news/liquid.html" title="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting">
+                            <img src="wp-content/uploads/2017/05/liquid-news-150x150.jpg" alt="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting" />
                           </a>
                         </div>
 
                         <div class="desc">
                           <div class="title">
-                            <a href="http://demo.gloriathemes.com/wp/esport/what-happened-this-esports-week/" title="What Happened This eSports Week">
-                              What Happened This eSports Week
+                            <a href="../news/liquid.html" title=" Team Liquid is the final team to secure a spot in the playoffs at MDC Genting">
+                              Team Liquid is the final team to secure a spot in the playoffs at MDC Genting
                             </a>
                           </div>
 
                           <div class="post-information">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                            April 21, 2017
+                            Oct 28, 2017
                           </div>
                         </div>
                       </div>
 
                       <div class="post-list-styles post-list-style-3">
                         <div class="image">
-                          <a href="http://demo.gloriathemes.com/wp/esport/best-skin-concepts-gloria-united/" title="Best Skin Concepts: Gloria United">
-                            <img src="http://demo.gloriathemes.com/wp/esport/wp-content/uploads/2017/04/post3-150x150.jpg" alt="Best Skin Concepts: Gloria United" />
+                          <a href="../news/newbee.html" title="Newbee claim a stunning 2-1 victory over EG">
+                            <img src="wp-content/uploads/2017/05/newbee-news-150x150.jpg" alt="Newbee claim a stunning 2-1 victory over EG" />
                           </a>
                         </div>
 
                         <div class="desc">
                           <div class="title">
-                            <a href="http://demo.gloriathemes.com/wp/esport/best-skin-concepts-gloria-united/" title="Best Skin Concepts: Gloria United">
-                              Best Skin Concepts: Gloria United
+                            <a href="../news/newbee.html" title="Newbee claim a stunning 2-1 victory over EG">
+                              Newbee claim a stunning 2-1 victory over EG
                             </a>
                           </div>
 
                           <div class="post-information">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                            April 21, 2017
+                          Oct 28, 2017
                           </div>
                         </div>
                       </div>
