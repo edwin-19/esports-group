@@ -181,7 +181,7 @@
             <div class="header-main-area">
               <div class="header-logo">
                 <div class="logo">
-                  <a href="http://demo.gloriathemes.com/wp/esport/" class="site-logo">
+                  <a href="index.html" class="site-logo">
                     <img alt="Logo" src="http://demo.gloriathemes.com/wp/esport/wp-content/themes/esport/assets/img/logo.png"  />
                   </a>
                 </div>
@@ -273,7 +273,7 @@
           <div class="logo-area">
             <div class="container">
               <div class="header-logo">
-                <div class="logo"><a href="http://demo.gloriathemes.com/wp/esport/" class="site-logo">
+                <div class="logo"><a href="index.html" class="site-logo">
                   <img alt="Logo" src="http://demo.gloriathemes.com/wp/esport/wp-content/themes/esport/assets/img/logo.png"  />
                 </a>
               </div>

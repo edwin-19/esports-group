@@ -713,10 +713,16 @@
                 </div><!-- .entry-content -->
 
                 <!-- SVG code -->
-               <svg width="300px" height="300px"
-                 xmlns="http://www.w3.org/2000/svg">
-                 <text x="10" y="50" font-size="30">My SVG</text>
-               </svg>
+
+                <svg width="300px" height="100px"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <text x="10" y="50" font-size="30">Stage</text>
+                  <div style="background-color: black;">
+                    <img src="../img/seating_map.png" alt="Aleter" />
+                  </div>
+                </svg>
+
+
               </article><!-- #post-## -->
 
             </div><!-- #content -->
@@ -783,33 +789,81 @@
         </div>
 
         <div class="vc_empty_space"   style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
-    <div class="esport-latest-posts-element style3"><div class="archive-post-list-style-3 post-list"><div class="post-list-styles post-list-style-3"><div class="image"><a href="../news/vp-champion.html" title="Virtus.Pro are the MDC Genting Champions"><img src="../wp-content/uploads/2017/05/vp-champion-150x150.jpg" alt="Virtus.Pro are the MDC Genting Champions" /></a></div><div class="desc"><div class="title"><a href="../news/vp-champion.html" title="Virtus.Pro are the MDC Genting Champions">Virtus.Pro are the MDC Genting Champions</a></div><div class="post-information"><i class="fa fa-calendar" aria-hidden="true"></i>Oct 29, 2017</div></div></div><div class="post-list-styles post-list-style-3"><div class="image"><a href="../news/liquid.html" title="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting"><img src="../wp-content/uploads/2017/05/liquid-news-150x150.jpg" alt="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting" /></a></div><div class="desc"><div class="title"><a href="../news/liquid.html" title="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting">Team Liquid is the final team to secure a spot in the playoffs at MDC Genting</a></div><div class="post-information"><i class="fa fa-calendar" aria-hidden="true"></i>Oct 28, 2017</div></div></div><div class="post-list-styles post-list-style-3"><div class="image"><a href="../news/newbee.html" title="Newbee claim a stunning 2-1 victory over EG "><img src="../wp-content/uploads/2017/05/newbee-news-150x150.jpg" alt="Newbee claim a stunning 2-1 victory over EG " /></a></div><div class="desc"><div class="title"><a href="../news/newbee.html" title="Newbee claim a stunning 2-1 victory over EG ">Newbee claim a stunning 2-1 victory over EG </a></div><div class="post-information"><i class="fa fa-calendar" aria-hidden="true"></i>Oct 28, 2017</div></div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="content-title-element white size2"><div class="title">Sponsors </div></div><div class="vc_empty_space"   style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
-    <div class="swiper-container logo-carousel gloria-sliders style2" data-column-space="10" data-aplay="" data-item="3" data-sloop=""><div class="swiper-wrapper"><div class="swiper-slide"><div class="logo-item"><a href="https://gloriathemes.com/" target=" _blank" title="Gloria Themes" ><img src="../wp-content/uploads/2017/04/sponsors-white-1.png" alt="Gloria Themes" /></a></div></div><div class="swiper-slide"><div class="logo-item"><a href="https://gloriathemes.com/" target=" _blank" title="Gloria Themes" ><img src="../wp-content/uploads/2017/04/sponsors-white-2.png" alt="Gloria Themes" /></a></div></div><div class="swiper-slide"><div class="logo-item"><a href="https://gloriathemes.com/" target=" _blank" title="Gloria Computers" ><img src="../wp-content/uploads/2017/04/sponsors-white-3.png" alt="Gloria Computers" /></a></div></div></div></div><div class="vc_empty_space"   style="height: 49px" ><span class="vc_empty_space_inner"></span></div>
-    <div class="content-title-element white size2"><div class="title">Newsletter </div></div><div class="vc_empty_space"   style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
-    <div class="esport-newsletter-element style2"><script type="text/javascript">(function() {
-    if (!window.mc4wp) {
-    window.mc4wp = {
-    listeners: [],
-    forms    : {
-    on: function (event, callback) {
-    window.mc4wp.listeners.push({
-      event   : event,
-      callback: callback
-    });
-    }
-    }
-    }
-    }
-    })();
-    </script><!-- MailChimp for WordPress v4.1.9 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-3" class="mc4wp-form mc4wp-form-228" method="post" data-id="228" data-name="eSport Newsletter" ><div class="mc4wp-form-fields"><p>
-    <input type="email" name="EMAIL" placeholder="Your email address" required />
-    </p>
-
-    <p class="submitButton">
-    <input type="submit" value="Sign up" />
-    </p><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1508400477" /><input type="hidden" name="_mc4wp_form_id" value="228" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-3" /></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin --></div></div></div></div></div>																				</div>
+    <div class="esport-latest-posts-element style3">
+      <div class="archive-post-list-style-3 post-list">
+        <div class="post-list-styles post-list-style-3">
+          <div class="image">
+            <a href="../news/vp-champion.html" title="Virtus.Pro are the MDC Genting Champions">
+              <img src="../wp-content/uploads/2017/05/vp-champion-150x150.jpg" alt="Virtus.Pro are the MDC Genting Champions" />
+            </a>
           </div>
-      </footer>
+
+          <div class="desc">
+            <div class="title">
+              <a href="../news/vp-champion.html" title="Virtus.Pro are the MDC Genting Champions">
+                Virtus.Pro are the MDC Genting Champions
+              </a>
+            </div>
+
+            <div class="post-information">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Oct 29, 2017
+            </div>
+          </div>
+        </div>
+
+        <div class="post-list-styles post-list-style-3">
+          <div class="image">
+            <a href="../news/liquid.html" title="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting">
+              <img src="../wp-content/uploads/2017/05/liquid-news-150x150.jpg" alt="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting" />
+            </a>
+          </div>
+
+          <div class="desc">
+            <div class="title">
+              <a href="../news/liquid.html" title="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting">
+                Team Liquid is the final team to secure a spot in the playoffs at MDC Genting
+              </a>
+            </div>
+
+            <div class="post-information">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Oct 28, 2017
+            </div>
+          </div>
+        </div>
+
+        <div class="post-list-styles post-list-style-3">
+          <div class="image">
+            <a href="../news/newbee.html" title="Newbee claim a stunning 2-1 victory over EG ">
+              <img src="../wp-content/uploads/2017/05/newbee-news-150x150.jpg" alt="Newbee claim a stunning 2-1 victory over EG " />
+            </a>
+          </div>
+
+          <div class="desc">
+            <div class="title">
+              <a href="../news/newbee.html" title="Newbee claim a stunning 2-1 victory over EG ">
+                Newbee claim a stunning 2-1 victory over EG
+              </a>
+            </div>
+
+            <div class="post-information">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Oct 28, 2017
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</footer>
     <div class="footer-copyright "><div class="container"><p>© Copyright 2017 eSport - All rights reserved.</p><div class="menu-copyright-menu-container"><ul id="menu-copyright-menu" class="menu"><li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-260"><a href="../index.html">Home</a></li>
     <li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="../payment-terms/index.html">Payment Terms</a></li>
     <li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="../privacy-policy/index.html">Privacy Policy</a></li>
