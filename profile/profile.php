@@ -22,9 +22,16 @@
 
   // Check if image file is a actual image or fake image
   if(isset($_POST['btn-upload'])){
-    validateImage();
-    checkFileExists();
-    checkFileSize();
+    if(validateImage()) {
+      if (checkFileExists()) {
+        if (checkFileSize()) {
+          if (checkFileType()) {
+            uploadImage($_SESSION['username'] . ".png");
+          }
+        }
+      }
+    }
+
   }
 
   if(isset($_POST['btnLogOut'])){
@@ -56,9 +63,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel='dns-prefetch' href='http://s.w.org/' />
     <link rel="alternate" type="application/rss+xml" title="eSport - eSports Gaming Theme For Clans, Teams, Tournament &amp; Organizations &raquo; Feed" href="../feed/index.html" />
@@ -185,16 +189,229 @@
         </style>
       </noscript>
   </head>
-  <body>
+  <body class="home page-template-default page page-id-11 esport-class  esport-shop-column-4 wpb-js-composer js-comp-ver-5.3 vc_responsive">
+    <!-- Header and main site content -->
+    <div class="esport-wrapper" id="general-wrapper">
+      <div class="site-content">
+        <div class="header header-style-1 remove-gap">
+          <div class="container">
+            <div class="header-main-area">
+              <div class="header-logo">
+                <div class="logo">
+                  <a href="../index.html" class="site-logo">
+                    <img alt="Logo" src="http://demo.gloriathemes.com/wp/esport/wp-content/themes/esport/assets/img/logo.png"  />
+                  </a>
+                </div>
+              </div>
+
+              <div class="header-elements">
+                <ul class="social-links">
+                  <li>
+                    <a href="https://www.facebook.com/gloriathemes/" class="facebook" title="Facebook" target="_blank">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://twitter.com/GloriaThemes" class="twitter" title="Twitter" target="_blank">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.twitch.tv/" class="twitch" title="Twitch" target="_blank">
+                      <i class="fa fa-twitch"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="../login.php" class="login" title="Login">
+                        <i class="fa fa-user-circle-o"></i>
+                      </a>
+                  </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="header-search">
+                  <div class="header-search-content-wrapper">
+                    <i class="fa fa-search"></i>
+                    <div class="header-search-content">
+                      <form role="search" method="get" id="esportsearchform-250754" class="searchform" action="http://demo.gloriathemes.com/wp/esport/">
+                        <div class="search-form-widget">
+                          <input type="text" value="" placeholder="Search" name="s" id="esport-search-form-250754" class="searchform-text" />
+                          <button><i class="fa fa-search"></i></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="header-menu">
+                <nav class="navbar">
+                  <div class="collapse navbar-collapse">
+                    <ul id="menu-main-menu" class="nav navbar-nav">
+                      <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24">
+                        <a href="../about/index.html">About Us</a></li>
+                      <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27">
+                        <a href="../teams/index.html">Teams</a></li>
+                      <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+                        <a href="../esport-fixtures/index.html">Fixtures</a></li>
+                      <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33">
+                        <a href="../tickets/index.html">Tickets</a></li>
+                      <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+                        <a href="../news/index.html">News</a></li>
+
+                      <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+                          <a href="../faq/index.html">FAQ</a></li>
+
+                      <li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29">
+                              <a href="../sponsors/index.html">Sponsors</a></li>
+
+                      <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
+                        <a href="../contact/index.html">
+                          Contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header for the mobile version -->
+        <header class="mobile-header">
+          <div class="logo-area">
+            <div class="container">
+              <div class="header-logo">
+                <div class="logo"><a href="../index.html" class="site-logo">
+                  <img alt="Logo" src="http://demo.gloriathemes.com/wp/esport/wp-content/themes/esport/assets/img/logo.png"  />
+                </a>
+              </div>
+            </div>
+
+          <div class="mobile-menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu-wrapper"></div>
+    <div class="mobile-menu scrollbar-outer">
+      <div class="mobile-menu-top">
+        <div class="logo-area">
+          <div class="header-logo">
+            <div class="logo">
+              <a href="../index.html" class="site-logo">
+                <img alt="Logo" src="http://demo.gloriathemes.com/wp/esport/wp-content/themes/esport/assets/img/logo.png"  />
+              </a>
+            </div>
+          </div>
+
+        <div class="mobile-menu-icon">
+          <i class="fa fa-times-thin" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <nav class="mobile-navbar">
+        <div class="collapse navbar-collapse">
+          <ul id="menu-main-menu-1" class="nav navbar-nav">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24">
+              <a href="../about/index.html">About</a>
+            </li>
+
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27">
+              <a href="../teams/index.html">Teams</a>
+            </li>
+
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26">
+              <a href="../esport-fixtures/index.html">Fixtures</a>
+            </li>
+
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33">
+              <a href="../ticket/index.html">Ticket</a>
+            </li>
+
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+              <a href="../news/index.html">News</a>
+            </li>
+
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+              <a href="../faq/index.html">FAQ</a>
+            </li>
+
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25">
+              <a href="../sponsors/index.html">Sponsors</a>
+            </li>
+
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
+              <a href="../contact/index.html">
+                Contact
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-menu-bottom">
+      <ul class="social-links">
+        <li>
+          <a href="https://www.facebook.com/gloriathemes/" class="facebook" title="Facebook" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+
+        <li><a href="https://twitter.com/GloriaThemes" class="twitter" title="Twitter" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.twitch.tv/" class="twitch" title="Twitch" target="_blank">
+          <i class="fa fa-twitch"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="login.html" class="login" title="Login">
+            <i class="fa fa-user-circle-o"></i>
+          </a>
+      </li>
+    </ul>
+
+    <div class="header-search">
+      <div class="header-search-content-wrapper">
+        <i class="fa fa-search"></i>
+        <div class="header-search-content">
+          <form role="search" method="get" id="esportsearchform-59351" class="searchform" action="http://demo.gloriathemes.com/wp/esport/">
+            <div class="search-form-widget">
+              <input type="text" value="" placeholder="Search" name="s" id="esport-search-form-59351" class="searchform-text" />
+              <button><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of mobile header-->
+
+    <!-- Header of the main site -->
     <div class="container">
-    <h1>Edit Profile</h1>
+     <h1>Edit Profile</h1>
   	 <hr>
 	    <div class="row">
         <!-- left column -->
         <div class="col-md-3">
           <form id="uploadForm" action="" method="post"  enctype= "multipart/form-data">
             <div class="text-center">
-              <img src="<?php echo "" ?>" class="avatar img-circle" alt="avatar">
+              <img src="<?php echo  "../uploads/" . $_SESSION['username'] . ".png"?>" class="avatar img-circle" alt="avatar">
               <h6>Upload a different photo...</h6>
 
               <input type="file" name="fileToUpload" id="fileToUpload">
@@ -313,9 +530,284 @@
     </div>
     <hr>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <footer class="footer footer-style1 remove-gap" id="Footer">
+          <div class="container">
+          <div class="footer-content">
+                        <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="content-title-element white size2"><div class="title">About &amp; <span>Contact</span></div></div><div class="vc_empty_space"   style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
+    <div class="esport-contact-box"><div class="contact-row about-text">The MDC also known as Marvelous Dota2 Championship, the successor to the MDC Major Series, is a tournament series organized by the Electronic Sports League.  </div><div class="contact-row address"><i class="fa fa-map-marker" aria-hidden="true"></i>KDU College glenmarie shah alam</div><div class="contact-row email"><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@MDC.com">info@MDC.com</a></div><div class="contact-row phone"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:++0166633366">+0166633366</a></div><div class="contact-row fax"><i class="fa fa-fax" aria-hidden="true"></i>+0166633367</div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="content-title-element white size2"><div class="title">Menu </div></div><div class="vc_empty_space"   style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
+    <div  class="vc_wp_custommenu wpb_content_element"><div class="widget widget_nav_menu"><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-215"><a href="index.html">Home</a></li>
+    <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="about/index.html">About</a></li>
+    <li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="teams/index.html">Teams</a></li>
+    <li id="menu-item-218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-218"><a href="esport-fixtures/index.html">Fixtures</a></li>
+    <li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221"><a href="ticket/index.php">Tickets</a></li>
+    <li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="new/index.html">News</a></li>
+    <li id="menu-item-253" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-253"><a href="category/videos/index.html">Videos</a></li>
+    <li id="menu-item-222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222"><a href="faq/index.html">FAQ</a></li>
+    <li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223"><a href="contact/index.html">Contact</a></li>
+    </ul></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="content-title-element white size2"><div class="title">Latest <span>Posts</span></div></div><div class="vc_empty_space"   style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
+    <div class="esport-latest-posts-element style3">
+      <div class="archive-post-list-style-3 post-list">
+        <div class="post-list-styles post-list-style-3">
+          <div class="image"><a href="news/vp-champion.html" title=" Virtus.Pro are the MDC Genting Champions">
+            <img src="../wp-content/uploads/2017/05/vp-champion-150x150.jpg" alt=" Virtus.Pro are the MDC Genting Champions" /></a>
+          </div>
+          <div class="desc">
+            <div class="title">
+              <a href="news/vp-champion.html" title=" Virtus.Pro are the MDC Genting Champions ">
+                Virtus.Pro are the MDC Genting Champions
+              </a>
+            </div>
+            <div class="post-information">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              Oct 29, 2017
+            </div>
+          </div>
+        </div>
+            <div class="post-list-styles post-list-style-3">
+              <div class="image">
+                <a href="../news/liquid.html" title="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting ">
+                  <img src="../wp-content/uploads/2017/05/liquid-news-150x150.jpg" alt="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting " />
+                </a>
+              </div>
+
+              <div class="desc">
+                <div class="title">
+                  <a href="../news/liquid.html" title="Team Liquid is the final team to secure a spot in the playoffs at MDC Genting ">
+                    Team Liquid is the final team to secure a spot in the playoffs at MDC Genting
+                  </a>
+                </div>
+
+                <div class="post-information">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>Oct 28, 2017
+                </div>
+              </div>
+            </div>
+
+            <div class="post-list-styles post-list-style-3">
+              <div class="image"><a href="news/newbee.html" title="Newbee claim a stunning 2-1 victory over EG">
+                <img src="../wp-content/uploads/2017/05/newbee-news-150x150.jpg" alt="Newbee claim a stunning 2-1 victory over EG" />
+              </a>
+            </div>
+
+            <div class="desc">
+              <div class="title">
+                <a href="news/newbee.html" title="Newbee claim a stunning 2-1 victory over EG">
+                  Newbee claim a stunning 2-1 victory over EG
+                </a>
+              </div>
+
+              <div class="post-information">
+                <i class="fa fa-calendar" aria-hidden="true"></i>Oct 28, 2017
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wpb_column vc_column_container vc_col-sm-3">
+  <div class="vc_column-inner ">
+    <div class="wpb_wrapper">
+      <div class="content-title-element white size2">
+        <div class="title">Sponsors </div>
+      </div>
+
+      <div class="vc_empty_space" style="height: 25px" >
+        <span class="vc_empty_space_inner"></span>
+      </div>
+
+      <div class="swiper-container logo-carousel gloria-sliders style2" data-column-space="10" data-aplay="" data-item="3" data-sloop="">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="logo-item"><a href="https://gloriathemes.com/" target=" _blank" title="Gloria Themes" >
+              <img src="../wp-content/uploads/2017/04/sponsors-white-1.png" alt="Gloria Themes" />
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="logo-item"><a href="https://gloriathemes.com/" target=" _blank" title="Gloria Themes" ><img src="../wp-content/uploads/2017/04/sponsors-white-2.png" alt="Gloria Themes" /></a></div></div><div class="swiper-slide"><div class="logo-item"><a href="https://gloriathemes.com/" target=" _blank" title="Gloria Computers" ><img src="wp-content/uploads/2017/04/sponsors-white-3.png" alt="Gloria Computers" /></a></div></div></div></div><div class="vc_empty_space"   style="height: 49px" ><span class="vc_empty_space_inner"></span></div>
+    <div class="content-title-element white size2"><div class="title">Newsletter </div></div><div class="vc_empty_space"   style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
+    <div class="esport-newsletter-element style2"><script type="text/javascript">(function() {
+    if (!window.mc4wp) {
+    window.mc4wp = {
+    listeners: [],
+    forms    : {
+    on: function (event, callback) {
+    window.mc4wp.listeners.push({
+      event   : event,
+      callback: callback
+    });
+    }
+    }
+    }
+    }
+    })();
+    </script><!-- MailChimp for WordPress v4.1.9 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-2" class="mc4wp-form mc4wp-form-228" method="post" data-id="228" data-name="eSport Newsletter" ><div class="mc4wp-form-fields"><p>
+    <input type="email" name="EMAIL" placeholder="Your email address" required />
+    </p>
+
+    <p class="submitButton">
+    <input type="submit" value="Sign up" />
+    </p><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1508400295" /><input type="hidden" name="_mc4wp_form_id" value="228" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-2" /></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>																				</div>
+          </div>
+      </footer>
+    <div class="footer-copyright "><div class="container"><p>© Copyright 2017  MDC - All rights reserved.</p><div class="menu-copyright-menu-container"><ul id="menu-copyright-menu" class="menu"><li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-260 active"><a href="index.html">Home</a></li>
+    <li id="menu-item-261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a href="payment-terms/index.html">Payment Terms</a></li>
+    <li id="menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a href="privacy-policy/index.html">Privacy Policy</a></li>
+    </ul></div></div></div>
+
+        <div class="modal fade pt-user-modal" id="user_login_popup" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="user-box">
+          <div class="user-box-login">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+            <div class="pt-login">
+              <form id="pt_login_form" action="http://demo.gloriathemes.com/wp/esport/" method="post">
+                <div class="form-group">
+                  <input class="required" name="pt_user_login" type="text" placeholder="Username" />
+                </div>
+                <div class="form-group">
+                  <input class="required" name="pt_user_pass" id="pt_user_pass" type="password" placeholder="Password" />
+                </div>
+                <div class="form-group login-form-remember-me">
+                  <div class="login-remember-me-wrapper">
+                    <input type="checkbox" value="None" id="login-remember-me-wrapper-input" name="pt_remember_me" />
+                    <label for="login-remember-me-wrapper-input" id="login-remember-me-wrapper-label">Remember Me</label>
+                  </div>
+                </div>
+                <div class="form-group login-form-button">
+                  <input type="hidden" name="action" value="esport_login_member"/>
+                  <button data-loading-text="Loading..." type="submit">Sign in</button>
+                </div>
+                <div class="bottom-links">
+                <a href="my-account/lost-password/index.html">Lost Password?</a>
+                <a href="#" data-target="#user_register_popup" data-toggle="modal" class="create-an-account" data-dismiss="modal">Create an Account</a>
+                </div>
+                <input type="hidden" id="login-security" name="login-security" value="b193b60096" /><input type="hidden" name="_wp_http_referer" value="/wp/esport/" />										</form>
+              <div class="pt-errors"></div>
+            </div>
+            <div class="pt-loading">
+              <p><i class="fa fa-refresh fa-spin"></i><br>Loading...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="modal fade pt-user-modal" id="user_register_popup" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="user-box">
+          <div class="user-box-login">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+            <div class="pt-register">
+              <p class="users_can_register">New membership are not allowed.</p>									</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Script to perform various animations -->
+    <script type="text/javascript">(function() {function addEventListener(element,event,handler) {
+    if(element.addEventListener) {
+      element.addEventListener(event,handler, false);
+    } else if(element.attachEvent) {
+      element.attachEvent('on'+event,handler);
+    }
+    }
+
+    function maybePrefixUrlField() {
+      if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+        this.value = "http://" + this.value;
+      }
+    }
+
+    var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+    if( urlFields && urlFields.length > 0 ) {
+      for( var j=0; j < urlFields.length; j++ ) {
+        addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+      }
+    }
+
+    /* test if browser supports date fields */
+    var testInput = document.createElement('input');
+    testInput.setAttribute('type', 'date');
+    if( testInput.type !== 'date') {
+      /* add placeholder & pattern to all date fields */
+      var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+      for(var i=0; i<dateFields.length; i++) {
+        if(!dateFields[i].placeholder) {
+          dateFields[i].placeholder = 'YYYY-MM-DD';
+        }
+        if(!dateFields[i].pattern) {
+          dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+        }
+      }
+    }
+
+    })();</script>
+
+    <link rel='stylesheet' id='vc_google_fonts_abril_fatfaceregular-css'  href='http://fonts.googleapis.com/css?family=Abril+Fatface%3Aregular&amp;ver=4.8.2' type='text/css' media='all' />
+    <script type='text/javascript' src='wp-content/plugins/bbpress/templates/default/js/editor01c4.js?ver=2.5.14-6684'></script>
+    <script type='text/javascript'>
+      /* <![CDATA[ */
+      var wpcf7 = {
+        "apiSettings":{"root":"http:\/\/demo.gloriathemes.com\/wp\/esport\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"
+      };
+      /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts33a6.js?ver=4.9'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js?ver=2.1.4'></script>
+    <script type='text/javascript'>
+      /* <![CDATA[ */
+      var woocommerce_params = {"ajax_url":"\/wp\/esport\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp\/esport\/?wc-ajax=%%endpoint%%"};
+      /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min0226.js?ver=3.1.2'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wc_cart_fragments_params = {"ajax_url":"\/wp\/esport\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp\/esport\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments_1aebe7a6857fda011785e08599f08999"};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min0226.js?ver=3.1.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/bootstrap.min4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/animate4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/scrollbar.min4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/admin-bar4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/fixed-sidebar4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/fixed-header4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.minde54.js?ver=5.3'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/swiper.min4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/counter4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/esport4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/countdown.min4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/plyr4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/select-classie4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/themes/esport/assets/js/select-fx4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-includes/js/wp-embed.min4a41.js?ver=4.8.2'></script>
+    <script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.minde54.js?ver=5.3'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var mc4wp_forms_config = [];
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min5fa1.js?ver=4.1.9'></script>
+    <!--[if lte IE 9]>
+    <script type='text/javascript' src='http://demo.gloriathemes.com/wp/esport/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.1.9'></script>
+    <![endif]-->
+
+
   </body>
 </html>

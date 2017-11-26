@@ -711,6 +711,12 @@
                     </div>
                   </div>
                 </div><!-- .entry-content -->
+
+                <!-- SVG code -->
+               <svg width="300px" height="300px"
+                 xmlns="http://www.w3.org/2000/svg">
+                 <text x="10" y="50" font-size="30">My SVG</text>
+               </svg>
               </article><!-- #post-## -->
 
             </div><!-- #content -->
@@ -911,103 +917,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="wpb_column vc_column_container vc_col-sm-3">
-            <div class="vc_column-inner ">
-              <div class="wpb_wrapper">
-                <div class="content-title-element white size2">
-                  <div class="title">
-                    Sponsors
-                  </div>
-                </div>
-
-                <div class="vc_empty_space"   style="height: 25px">
-                  <span class="vc_empty_space_inner"></span>
-                </div>
-
-                <div class="swiper-container logo-carousel gloria-sliders style2" data-column-space="10" data-aplay="" data-item="3" data-sloop="">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="logo-item">
-                        <a href="https://gloriathemes.com/" target=" _blank" title="Gloria Themes" >
-                          <img src="../wp-content/uploads/2017/04/sponsors-white-1.png" alt="Gloria Themes" />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="logo-item">
-                        <a href="https://gloriathemes.com/" target=" _blank" title="Gloria Themes" >
-                          <img src="../wp-content/uploads/2017/04/sponsors-white-2.png" alt="Gloria Themes" />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                      <div class="logo-item">
-                        <a href="https://gloriathemes.com/" target=" _blank" title="Gloria Computers">
-                          <img src="../wp-content/uploads/2017/04/sponsors-white-3.png" alt="Gloria Computers" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="vc_empty_space" style="height: 49px">
-                  <span class="vc_empty_space_inner"></span>
-                </div>
-
-                <div class="content-title-element white size2">
-                  <div class="title">Newsletter </div>
-                </div>
-
-                <div class="vc_empty_space"   style="height: 25px" >
-                  <span class="vc_empty_space_inner"></span>
-                </div>
-
-                <div class="esport-newsletter-element style2">
-                  <script type="text/javascript">(function() {
-                    if (!window.mc4wp) {
-                    window.mc4wp = {
-                    listeners: [],
-                    forms    : {
-                    on: function (event, callback) {
-                      window.mc4wp.listeners.push({
-                        event   : event,
-                        callback: callback
-                      });
-                    }
-                    }
-                    }
-                    }
-                    })();
-                  </script><!-- MailChimp for WordPress v4.1.9 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
-                  <form id="mc4wp-form-3" class="mc4wp-form mc4wp-form-228" method="post" data-id="228" data-name="eSport Newsletter" >
-                    <div class="mc4wp-form-fields">
-                      <p>
-                        <input type="email" name="EMAIL" placeholder="Your email address" required />
-                      </p>
-
-                      <p class="submitButton">
-                        <input type="submit" value="Sign up" />
-                      </p>
-
-                      <label style="display: none !important;">
-                        Leave this field empty if you're human:
-                        <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" />
-                      </label>
-
-                      <input type="hidden" name="_mc4wp_timestamp" value="1508400477" />
-                      <input type="hidden" name="_mc4wp_form_id" value="228" />
-                      <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-3" />
-                    </div>
-
-                    <div class="mc4wp-response"></div>
-                  </form><!-- / MailChimp for WordPress Plugin -->
                 </div>
               </div>
             </div>
