@@ -113,7 +113,7 @@
 
   		/*----- CUSTOM COLOR START -----*/
   		.page-title-breadcrumbs .page-title-breadcrumbs-image {
-  			background-image:url(wp-content/themes/esport/assets/img/breadcrumbs-bg.jpg);
+  			background-image:url(../wp-content/uploads/2017/05/allpage-img.png);
   		}
   	</style>
 
